@@ -36,16 +36,16 @@ export const Home = () => {
           {!isAuthenticated && (
             <>
               <Link to="/auth">
-                <a className="inline-flex items-center justify-center h-12 px-8 text-lg rounded-full border-2 border-border hover:bg-indigo-400 transition bg-primary text-primary-foreground">
+                <div className="inline-flex items-center justify-center h-12 px-8 text-lg rounded-full border-2 border-border hover:bg-indigo-400 transition bg-primary text-primary-foreground">
                   Create Your Profile
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
+                </div>
               </Link>
 
               <Link to="/auth">
-                <a className="inline-flex items-center justify-center h-12 px-8 text-lg rounded-full border-2 border-border hover:border-slate-300 hover:bg-muted transition">
+                <div className="inline-flex items-center justify-center h-12 px-8 text-lg rounded-full border-2 border-border hover:border-slate-300 hover:bg-muted transition">
                   Login
-                </a>
+                </div>
               </Link>
             </>
           )}
