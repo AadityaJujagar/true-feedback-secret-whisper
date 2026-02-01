@@ -46,6 +46,14 @@ app.set("io", io);
 io.use(socketAuth);
 socketHandler(io);
 
+app.get("/", (_req, res) => {
+  res.status(200).json({
+    success: true,
+    message: "Backend is running...",
+    uptime: process.uptime(),
+  });
+});
+
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
