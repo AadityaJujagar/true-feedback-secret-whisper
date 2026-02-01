@@ -133,7 +133,7 @@ secret-whisper/
 
    Create `.env.local` file:
    ```env
-   VITE_APP_BASE_URL=http://localhost:4000/api/v1
+   VITE_API_URL=http://localhost:4000/api/v1
    ```
 
    Start the development server:
